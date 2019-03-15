@@ -6,15 +6,15 @@ class Navbar extends Component {
     }
     render() { 
         return (<ol className="navbar">
-            <li className="button" onClick={() => this.props.click('home')}>Home</li>
+            <li className="button" onClick={() => this.props.homeClick()}>Home</li>
             <li className="divider"></li>
-            <li className="button" onClick={() => this.props.click('newsfeed')}>Newsfeed</li>
+            <li className="button" onClick={() => this.props.newsfeedClick()}>Newsfeed</li>
             <li className="divider"></li>
-            <li className="button" onClick={() => this.props.click('tic-tac-toe')}>Tic-Tac-Toe</li>
+            <li className="button" onClick={() => this.props.ticTacToeClick()}>Tic-Tac-Toe</li>
             <li className="divider"></li>
-            <li className="button" onClick={() => this.props.click('button')}>Staff</li>
+            <li className="button" onClick={() => this.props.staffClick()}>Staff</li>
             <li className="divider"></li>
-            <li className="button" onClick={() => this.props.click('products')}>Products</li>            
+            <li className="button" onClick={() => this.props.productsClick()}>Products</li>            
         </ol>);
     }
 }
