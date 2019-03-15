@@ -241,9 +241,15 @@ body, #root {
     #scoreboard {
         width: 300px;
         height: 600px;
-        background: white;
+        background: purple;
+        color: white;
+        font-size: 20px;
         margin-left: 5px;
         overflow-y: scroll;
+
+        .round {
+            margin-bottom: 10px;
+        }
     }
 
     .inline {
@@ -262,5 +268,79 @@ body, #root {
         vertical-align: middle;
         line-height: 194px;
         font-size: 60px;
+    }
+}
+
+#staffPage {
+    #employees {
+        margin: 15px;
+    }
+
+    .entry {
+        background: white;
+        padding: 5px;
+        width: 200px;
+        display: inline-block;
+        margin: 10px;
+
+        .name {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .role {
+            font-size: 17px;
+            text-align: center;
+        }
+
+        .image {
+            width: 200px;
+        }
+    }
+}
+
+#productsPage {
+    #products {
+
+        .product {
+            background: white;
+            width: 600px;
+            height: 400px;
+            float: left;
+            margin: 15px;
+
+            .product-header {
+                color: white;
+
+                .name {
+                    background: purple;
+                    padding: 7px;
+                    margin: 5px;                
+                    font-size: 30px;
+                }
+
+                .price {
+                    background: rgb(51, 51, 51);
+                    padding: 7px;
+                    font-size: 30px;
+                }
+            }
+
+            .inline {
+                display: inline-block;
+            }
+
+            .description {
+                text-align: left;
+                font-size: 20px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+                margin-left: 15px;
+            }
+
+            .image {
+                width: 500px;
+            }
+        }
     }
 }

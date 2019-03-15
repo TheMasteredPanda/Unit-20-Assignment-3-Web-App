@@ -64,7 +64,6 @@ class TicTacToePage extends Component {
     }
 
     clickedSquare(squareId) {
-        console.log(`Square ID: ${squareId}`);
         let copy = this.state;
         if (copy.gameState[squareId] !== 0) return;
         

@@ -173,9 +173,13 @@ body, #root {
 #tic-tac-toe #scoreboard {
   width: 300px;
   height: 600px;
-  background: white;
+  background: purple;
+  color: white;
+  font-size: 20px;
   margin-left: 5px;
   overflow-y: scroll; }
+  #tic-tac-toe #scoreboard .round {
+    margin-bottom: 10px; }
 #tic-tac-toe .inline {
   float: left; }
 #tic-tac-toe .square {
@@ -190,5 +194,50 @@ body, #root {
   vertical-align: middle;
   line-height: 194px;
   font-size: 60px; }
+
+#staffPage #employees {
+  margin: 15px; }
+#staffPage .entry {
+  background: white;
+  padding: 5px;
+  width: 200px;
+  display: inline-block;
+  margin: 10px; }
+  #staffPage .entry .name {
+    font-size: 20px;
+    text-align: center; }
+  #staffPage .entry .role {
+    font-size: 17px;
+    text-align: center; }
+  #staffPage .entry .image {
+    width: 200px; }
+
+#productsPage #products .product {
+  background: white;
+  width: 600px;
+  height: 400px;
+  float: left;
+  margin: 15px; }
+  #productsPage #products .product .product-header {
+    color: white; }
+    #productsPage #products .product .product-header .name {
+      background: purple;
+      padding: 7px;
+      margin: 5px;
+      font-size: 30px; }
+    #productsPage #products .product .product-header .price {
+      background: #333333;
+      padding: 7px;
+      font-size: 30px; }
+  #productsPage #products .product .inline {
+    display: inline-block; }
+  #productsPage #products .product .description {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 15px; }
+  #productsPage #products .product .image {
+    width: 500px; }
 
 /*# sourceMappingURL=index.css.map */
