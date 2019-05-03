@@ -18,6 +18,7 @@ function formatDate(date) {
     return day + ' ' + monthNames[monthIndex] + ' ' + year;
   }
 
+  /** React component used to repeat the structure of an article entry. */
 function Article(props) {
     return (<div className="article">
         <h4 className="title">Article Title</h4>
@@ -40,7 +41,7 @@ function Article(props) {
     </div>)
 }
 
-
+/** React Component used to forumate the newsfeed page. */
 class NewsfeedPage extends Component {
     state = {  }
     render() { 

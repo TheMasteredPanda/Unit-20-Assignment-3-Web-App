@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+/** React Component used to replicate a products structure.*/
 function Product(props) {
     return (<div className="product">
         <div className="product-header">
@@ -11,6 +12,7 @@ function Product(props) {
     </div>)
 }
 
+/**React Component used to forumate the products page. */
 class ProductsPage extends Component {
     state = {  }
     render() { 

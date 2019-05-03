@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Timeline } from 'react-twitter-widgets';
 
+/** React component used to structure the home page. */
 class HomePage extends Component {
     state = {  }
 

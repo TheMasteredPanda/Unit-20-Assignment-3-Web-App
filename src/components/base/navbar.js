@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+/** React component used to formulate the navigation bar. */
 class Navbar extends Component {
     constructor(props) {
         super(props);

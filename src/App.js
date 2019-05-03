@@ -16,12 +16,14 @@ class App extends Component {
     }
   }
 
+  /** Sets the state of the page that needs to be rendered.*/
   click(pageId) {
     let copy = this.state;
     copy.page = pageId;
     this.setState(copy);
   }
 
+  /**Rengered page. */
   page() {
     switch (this.state.page) {
       case 'home': {
@@ -46,6 +48,7 @@ class App extends Component {
     }
   }
 
+  /**Renders the web application. */
   render() {
     return (
       <div className="App">

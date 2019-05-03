@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+/** React Component used to replicate the structure of a staff member. */
 function Member(props) {
     return (<div className="entry">
         <h4 className="name">{props.name}</h4>
@@ -8,7 +9,7 @@ function Member(props) {
     </div>)
 }
 
-
+/** React Component used to forumate the staff page. */
 class StaffPage extends Component {
     state = {  }
     render() { 

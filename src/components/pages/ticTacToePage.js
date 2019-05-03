@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 
+/** React Component used to formulate all 9 squares of the game. */
 function Square(props) {
     return (<div className="square" onClick={() => props.click()}>{props.move === 0 ? '' : props.move === 1 ? 'X' : 'O'}</div>)
 }
 
+/**React component used to display the winner of a round. */
 function Round(props) {
     return (<div className="round">Round {props.round}: {props.winner === 1 ? 'X' : 'O'}</div>);
 }
 
+/**React Component used to forumate the tic-tac-toe page. */
 class TicTacToePage extends Component {
     state = {
         /**
+         * The game state refers to the current state of a game at any given time. If a user from either side clicks a box, the game state will change to represent that click.
          * 0 = Square not filled.
          * 1 = X
          * 2 = O
@@ -18,17 +22,20 @@ class TicTacToePage extends Component {
         gameState: [0, 0, 0, 0, 0, 0, 0, 0, 0],
         /**Whose turn it is.*/
         turn: 'X',
+        /* The winner of the round. */
         winner: null,
+        /* The storage structure used to temporarily store all recorded tic-tac-toe round, this will be wiped if the website is reloaded. */
         rounds: [
             {
                 round: 1,
                 winner: 'X'
             }
         ],
+        /* Keeps track of what round the user(s) are on */
         round: 1
     }
 
-
+    /** Attempts to caluclate the winner using the game state after every move. If a winner is determined the game will log a record, using the React Component, and reset the game. */
     calculateWinner(squares) {
         const lines = [
           [0, 1, 2],
@@ -49,6 +56,7 @@ class TicTacToePage extends Component {
         return null;
       }
 
+    /* Used to signify whose turn it is*/
     renderTurn() {
         let turn = this.state.turn;
         let entityX = document.getElementById("entryX");
@@ -63,6 +71,7 @@ class TicTacToePage extends Component {
         }
     }
 
+    /* Invoked when a user clicks a square. */
     clickedSquare(squareId) {
         let copy = this.state;
         if (copy.gameState[squareId] !== 0) return;
@@ -79,10 +88,12 @@ class TicTacToePage extends Component {
         this.setState(copy);
     }
 
+    /* Renders all recorded rounds. */
     renderRounds() {
         return this.state.rounds.map(o => <Round round={o.round} winner={o.winner}/>);
     }
 
+    /** Function used to render the page. */
     render() { 
         return (<div id="tic-tac-toe">
             <div id="wrapper">
