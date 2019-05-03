@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Unit-20-Assignment-3-Website/precache-manifest.490b4f348e8efa84cca3b82475193953.js"
+  "/Unit-20-Assignment-3-Website/precache-manifest.6c06b2f2007d833e5fdfa0a891158b52.js"
 );
 
 workbox.clientsClaim();
