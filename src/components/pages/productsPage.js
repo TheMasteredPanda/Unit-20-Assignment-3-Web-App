@@ -15,6 +15,7 @@ function Product(props) {
 /**React Component used to forumate the products page. */
 class ProductsPage extends Component {
     state = {  }
+    
     render() { 
         return (<div id="productsPage">
             <div id="products">
